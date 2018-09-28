@@ -1,0 +1,30 @@
+{
+  "name": "suria/environment",
+  "description": "Laravel Various Environments (.env)",
+  "type": "library",
+  "keywords": ["laravel", "environment"],
+  "require": {
+    "php": ">=7.0",
+    "vlucas/phpdotenv": "^2.5.1"
+  },
+  "license": "agpl-3.0",
+  "authors": [
+    {
+      "name": "Cheke",
+      "email": "xekevara@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "Suria\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Suria\\Environment\\EnvironmentServiceProvider"
+      ]
+    }
+  }
+}
