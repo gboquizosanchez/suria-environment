@@ -13,7 +13,7 @@ class EnvironmentServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+		\Artisan::call('vendor:publish', ['--force' => true]);
     }
 
     /**
